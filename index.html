@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thinkful | Thinkful Tube solution</title>
+    <meta charset="utf-8">
+    <meta name="description" value="Example solution for Thinkful's Front End Web Development course">
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <main>
+            <h1>Welcome to Thinkful Tube</h1>
+            <form id="js-search-term">
+                <label for="query">Search for:</label>
+                <input type="text" name="query" required>
+                <button type="submit">Search</button>
+            </form>
+
+            <div class="js-results">
+            </div>
+        </main>
+    </div>
+
+    <!-- for partial templates to be cloned by jquery in app.js -->
+    <div style="display:none">
+
+        <div class="js-result-template">
+            <div class="search-result-item">
+                <a href="" target="_blank">
+                    <img src="">
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
